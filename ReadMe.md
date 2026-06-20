@@ -208,10 +208,9 @@ IoU (Intersection over Union, the Jaccard index) is the harsher companion metric
 - BraTS 2024 Challenge — Brain Tumor Segmentation, RSNA-ASNR-MICCAI.
 
 ---
-
 <div align="center">
 
-**M1** (this repo) → [M2 — Fisher-KPP Growth PINN](#) → [M3 — Progression Classifier](#) → [M4 — RAG Clinical Reporting](#)
+**M1** (this repo) → [M2 — Fisher-KPP Growth PINN](https://github.com/arnavmishra4/M2_PINN) → [M3 — Progression Classifier](https://github.com/arnavmishra4/M3-Classifier-) → [M4 — RAG Clinical Reporting](https://github.com/arnavmishra4/M4-Report-LLM-RAG-)
 
 *reasoned over by the [NeuroBio Agent](#)*
 
