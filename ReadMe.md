@@ -181,10 +181,8 @@ IoU (Intersection over Union, the Jaccard index) is the harsher companion metric
 |---|---|---|---|
 | 1 | Reported Dice (0.8851) is 4-class macro incl. background | Not directly comparable to published BraTS WT/TC/ET numbers | Re-evaluate with standard binary region groupings |
 | 2 | No held-out test set | Validation set was also used for checkpoint selection — some optimistic bias | Carve out a third, fully untouched split |
-| 3 | DDP ranks train on disjoint cohorts | Valid for gradient averaging, but not a shuffled shared sampler | Document for reproducibility; not a blocker |
-| 4 | No sliding-window / TTA inference | Current inference is patch-based at training crop size | Implement full-volume sliding-window inference |
-| 5 | No early stopping | Best checkpoint (epoch 84) found before the LR schedule's final decay | Consider stopping criteria tied to val-Dice plateau |
-| 6 | Raw voxel accuracy is logged but not reported | Sits at 99%+ from epoch 1, before the model has learned anything — background dominates total volume, making accuracy uninformative for this task | Not a model flaw — a metric-choice note. Dice/IoU are reported instead for exactly this reason |
+| 3 | No sliding-window / TTA inference | Current inference is patch-based at training crop size | Implement full-volume sliding-window inference |
+| 4 | Raw voxel accuracy is logged but not reported | Sits at 99%+ from epoch 1, before the model has learned anything — background dominates total volume, making accuracy uninformative for this task | Not a model flaw — a metric-choice note. Dice/IoU are reported instead for exactly this reason |
 
 ---
 
